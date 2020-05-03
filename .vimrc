@@ -23,11 +23,8 @@ imap <F2> <Esc>
 "-------------Visuals------------"
 colorscheme atom-dark-256
 
-
-set guioptions-=l				"Disable GUI scrollbar
-set guioptions-=L
-set guioptions-=r
-set guioptions-=R
+"Add simple highliht removal.
+nmap <Leader><space> :nohlsearch<cr>
 
 
 
@@ -61,17 +58,8 @@ nmap <C-L> <C-W><C-L>
 "Make it easy to edit the vimrc file.
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
-"Add simple highliht removal.
-nmap <Leader><space> :nohlsearch<cr>
-
-"Make NERDTree easier toggle.
-nmap <C-n> :NERDTreeToggle<CR>
-
-"Search methodss in a file using CtrlP.
-nmap <C-R> :CtrlPBufTag<cr>
-
-"Open most recent used files.
-nmap <C-e> :CtrlPMRUFiles<cr>
+"Make it easy to edit snippet files.
+nmap <Leader>es :e ~/.vim/snippets/
 
 "Search methods in whole site using ctags.
 nmap <Leader>f :tag<space>
@@ -85,12 +73,23 @@ nmap <Leader>f :tag<space>
 "/
 let NERDTreeHijackNetrw = 0
 
+"Make NERDTree easier toggle.
+nmap <C-n> :NERDTreeToggle<CR>
+
+
 
 "/
 "/CtrlP
 "/
 let g:ctrlp_custom_ignore = 'node_modules\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+
+"Search methods in a file using CtrlP.
+nmap <C-R> :CtrlPBufTag<cr>
+
+"Open most recent used files.
+nmap <C-e> :CtrlPMRUFiles<cr>
+
 
 
 "/
@@ -101,12 +100,24 @@ if executable('ag')
 endif
 
 
+
 "/
 "/Greplace.vim
 "/
 set grepprg=ag						 "We want to use ag for search
 
 let g:grep_cmd_opts = '--line-numbers --noheading'
+
+
+
+
+
+"----------Laravel Specific----------"
+nmap <Leader>la :e routes/api.php<cr>
+nmap <Leader>lm :!php artisan make:
+nmap <Leader><Leader>c :CtrlP<cr>app/Http/Controllers/
+nmap <Leader><Leader>m :CtrlP<cr>app/
+nmap <Leader><Leader>v :e resources/views/<cr>
 
 
 

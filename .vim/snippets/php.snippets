@@ -1,0 +1,38 @@
+snippet met
+	public function ${1}()
+	{
+	    ${2}
+	}
+
+
+snippet pmet
+	protected function ${1}()
+	{
+	    ${2}
+	}
+
+
+snippet smet
+	public static function ${1}()
+	{
+	    ${2}
+	}
+
+
+snippet rg
+	Route::get('/${1}', '${2}Controller@${3}');
+
+snippet rp
+	Route::post('/${1}', '${2}Controller@${3}');
+
+snippet rga
+	Route::get('/${1}', function () {
+	    return view('${2}');
+	});
+
+
+snippet $
+	$this->${1}
+
+snippet re
+	return${1};

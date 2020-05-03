@@ -28,7 +28,7 @@ $previous_buffer = ":bp";
 
 $next_buffer = ":bn";
 
-$close_everything = ":bufdo bd!"
+$close_everything = ":bufdo bd!";
 
 $new_line = "o";
 
@@ -36,7 +36,7 @@ $cen_current_line_cur = "zz";
 
 $top_of_the_file = "gg";
 
-$bottom_of_the_file = " G "
+$bottom_of_the_file = " G ";
 
 $ceate_horigental_split = ":sp";
 
@@ -58,6 +58,10 @@ $delete_file_or_folder_with_vinegar_pl = " D ";
 
 $open_file_tree_sidebar_with_NERDTreePlugin = " ctrl + n ";
 
+$search_file_with_ctrlp_pl = " ctrl + p ";
+//if not appears latest created files press <F5> for refresh
+
+
 $set_up_tags_file_for_search_methods_using_ctags = " ctags -R ";
 
 $site_wide_serach_methods_using_ctags = " :tag method_name";  
@@ -66,9 +70,11 @@ $site_wide_serach_methods_using_ctags = " :tag method_name";
 //list of all mathes: " :ts "
 
 
+
 //searching site wide using "silversearcher-ag with ack.vim" plugins
 $search_site_wide = " :Ack 'John Doe' "
 //normally we can search with /keyword
+
 
 
 // for site wide searching and replace used plugin: greplace.vim
@@ -84,6 +90,12 @@ $search_site_wide = " :Ack 'John Doe' "
 // that's it!
 
 
+
+$open_all_code_folds = " za ";
+
+$close_all_the_code_folds = " zc ";
+
+$setup_snippets_for_vim = "garbas/vim-snipmat";
 }
 
 
