@@ -22,7 +22,7 @@ $close_tab = ":bd";
 
 $switch_between_tabs = " gt ";
 
-$toggle_between_two_buffer = "ctrl + ^;
+$toggle_between_two_buffer = "ctrl + ^";
 
 $previous_buffer = ":bp";
 
