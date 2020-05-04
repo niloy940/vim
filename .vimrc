@@ -51,8 +51,6 @@ nmap <C-L> <C-W><C-L>
 
 
 
-
-
 "-------------Mappings------------"
 
 "Make it easy to edit the vimrc file.
@@ -63,6 +61,7 @@ nmap <Leader>es :e ~/.vim/snippets/
 
 "Search methods in whole site using ctags.
 nmap <Leader>f :tag<space>
+
 
 
 

@@ -96,7 +96,17 @@ $open_all_code_folds = " za ";
 $close_all_the_code_folds = " zc ";
 
 $setup_snippets_for_vim = "garbas/vim-snipmat";
-}
+//we used shortcut to create snippets " ,es "
 
+
+$change_surrounding_parentheses_bracketsORquotes = "tpope/vim-surround";
+// change "" to '' = cs"'     				//change surroundings "" to ''
+// remove the delimiters("") entirely = ds"
+// change surrounding tags in html like <div> = cst
+// remove surrounding tags in html like <span> = dst
+// add sourroundings = select with v then press S
+
+
+}
 
 
