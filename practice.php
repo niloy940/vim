@@ -115,6 +115,9 @@ $auto_update_use_statment_top_of_the_class = "arnaud-lb/vim-php-namespace";
 //we used shortcut: ,u and ,uf
 //shortcut for sorting use statments: select all then  ,su
 
+$join_two_line = " J ";
+
+$auto_completion_with_tab = "ervandew/supertab";
 }
 
 

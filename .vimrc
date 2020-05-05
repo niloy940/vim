@@ -1,12 +1,15 @@
-set nocompatible              	"We want the latest vim settings/options
+set nocompatible              						"We want the latest vim settings/options
 
 so ~/.vim/plugins.vim
 
 
 
 syntax enable
-set number			"Let's activate line numbers
-let mapleader = ','		"The deafult leader is \ but a comma is much better
+set number								"Let's activate line numbers
+let mapleader = ','							"The deafult leader is \ but a comma is much better
+set autowriteall  							"Automatically write the file when switching buffers.
+set complete=.,w,b,u 							"Set our desired autocomplition matching.
+
 
 
 
