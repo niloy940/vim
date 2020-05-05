@@ -109,6 +109,32 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 
 
 
+"/
+"/vim-php-namespace
+"/
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
+
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>uf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>uf :call PhpExpandClass()<CR>
+
+"Sort PHP use statements
+"http://stackoverflow.com/questions/11531073/how-do-you-sort-a-range-of-lines-by-length
+vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
+
+
+
+
+
+
 
 
 "----------Laravel Specific----------"

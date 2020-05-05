@@ -22,7 +22,7 @@ $close_tab = ":bd";
 
 $switch_between_tabs = " gt ";
 
-$toggle_between_two_buffer = "ctrl + ^";
+$toggle_between_two_buffer = "ctrl + 6";
 
 $previous_buffer = ":bp";
 
@@ -63,6 +63,8 @@ $search_file_with_ctrlp_pl = " ctrl + p ";
 
 
 $set_up_tags_file_for_search_methods_using_ctags = " ctags -R ";
+//we can also do like this: ctags -R --exclude=node_modules|vendor
+
 
 $site_wide_serach_methods_using_ctags = " :tag method_name";  
 //we used shortcut " ,f "
@@ -106,6 +108,12 @@ $change_surrounding_parentheses_bracketsORquotes = "tpope/vim-surround";
 // remove surrounding tags in html like <span> = dst
 // add sourroundings = select with v then press S
 
+
+$updated_systex_file_for_php = "StanAngeloff/php.vim";
+
+$auto_update_use_statment_top_of_the_class = "arnaud-lb/vim-php-namespace";
+//we used shortcut: ,u and ,uf
+//shortcut for sorting use statments: select all then  ,su
 
 }
 
