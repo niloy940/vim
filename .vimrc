@@ -10,7 +10,10 @@ let mapleader = ','							"The deafult leader is \ but a comma is much better
 set autowriteall  							"Automatically write the file when switching buffers.
 set complete=.,w,b,u 							"Set our desired autocomplition matching.
 
-
+set tabstop=8
+set expandtab
+set softtabstop=4
+set shiftwidth=4
 
 
 
@@ -56,6 +59,9 @@ nmap <C-L> <C-W><C-L>
 
 "-------------Mappings------------"
 
+"redo changes
+nmap <Leader>r :redo<cr>
+
 "Make it easy to edit the vimrc file.
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
@@ -65,7 +71,8 @@ nmap <Leader>es :e ~/.vim/snippets/
 "Search methods in whole site using ctags.
 nmap <Leader>f :tag<space>
 
-
+"php-cs-fixer
+nmap <leader>pf :silent !php-cs-fixer fix "%" --rules=@PSR2<cr> :e!<cr>
 
 
 

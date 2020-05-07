@@ -7,6 +7,9 @@ class Foo {
 	//change something inside "" = ci"
 	//select everything inside {} = vi{
 	//select everything with {} = va{
+	//select everything with tag <script> = vat
+	//delete everything inside tag <style> = dit
+	//copy word= yiw
 
 	//finding method's defination = ctrl + ]
 
@@ -31,6 +34,39 @@ $next_buffer = ":bn";
 $close_everything = ":bufdo bd!";
 
 $new_line = "o";
+
+$go_to_end_of_the_line_and_insert_mode = "A";
+
+$go_to_end_the_line = " $ ";
+
+$go_to_start_of_the_line = " ^ "
+
+$delete_line_and_insert_mode = "S";
+
+$copy_a_line = "y";
+
+$paste = "p";
+
+$copy_and_paste_to_the_next_line = "yyp";
+
+$repeat_last_operation = " . ";
+//for pasting again same line many times just hit:  . 
+
+$cut_the_line = "C"
+
+$join_two_line = " J ";
+
+$go_top_of_window = "H";
+
+$go_bottom_of_window = "L";
+
+$go_to_next_word = "w";
+
+$back_previous_word = "b";
+
+$select_line = "V";
+
+$go_down = "ctrl + d";
 
 $cen_current_line_cur = "zz";
 
@@ -115,9 +151,17 @@ $auto_update_use_statment_top_of_the_class = "arnaud-lb/vim-php-namespace";
 //we used shortcut: ,u and ,uf
 //shortcut for sorting use statments: select all then  ,su
 
-$join_two_line = " J ";
-
 $auto_completion_with_tab = "ervandew/supertab";
+
+$mark_a_position_with_M = " mM ";
+//A mark allows you to record your current position so you can return to it later.
+//to jupm to the mark = 'M
+//to jupm exact cursor position = `M
+//for jumping different files always use capital latter for marking like: M
+//to delete line in a file: mark with mn then delete = d'n
+//for selecting = v'n
+//all marks list = :marks
+
 }
 
 
