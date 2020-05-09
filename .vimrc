@@ -16,6 +16,12 @@ set softtabstop=4
 set shiftwidth=4
 
 
+"Macro for constructor
+let @a="yiw/}O$this->pa = $pa;?constructOprotected $pa;/construct/\", "
+
+
+
+
 
 "-------------Esc Button------------"
 

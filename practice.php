@@ -162,6 +162,20 @@ $mark_a_position_with_M = " mM ";
 //for selecting = v'n
 //all marks list = :marks
 
+
+
+$indent_with_tab_normal_mode = "select and > or < ";
+
+
+
+// Macros
+// hit q and any letter to start recording keystork like:  qb
+// hit q to stop recording
+// :reg for showing all registered macros
+// @ and that letter for using macro later like:  @b
+// hit "bp for pasting registers suppose in vimrc
+// hit ctrl + r + "  for pasting in command mode
+
 }
 
 
