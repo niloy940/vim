@@ -1,10 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/user/code/laravel/voter-info-system-api-master'
-let g:netrw_dirhist_2='/home/user/code/laravel'
-let g:netrw_dirhist_3='/home/user/code'
-let g:netrw_dirhist_4='/home/user/code/laravel'
-let g:netrw_dirhist_5='/home/user/code/laravel/voter-info-system-api-master'
-let g:netrw_dirhist_6='/home/user/code/laravel/voter-info-system-api-master/app'
-let g:netrw_dirhist_7='/home/user/code/laravel/voter-info-system-api-master/app/Http'
-let g:netrw_dirhist_8='/home/user/code/laravel/voter-info-system-api-master/app/Http/Controllers'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/user/code/nuxt/my-nuxt-app/store'
+let g:netrw_dirhist_2='/home/user/code/nuxt/my-nuxt-app'
+let g:netrw_dirhist_3='/home/user/code/nuxt/my-nuxt-app/pages'

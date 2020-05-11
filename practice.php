@@ -176,6 +176,8 @@ $indent_with_tab_normal_mode = "select and > or < ";
 // hit "bp for pasting registers suppose in vimrc
 // hit ctrl + r + "  for pasting in command mode
 
+$syntax_checking_hacks_for_vim = "vim-syntastic/syntastic";
+
 }
 
 
